@@ -1,0 +1,18 @@
+.topbar {
+    height: 50px;
+    background-color: cyan;
+    margin-top: -20px;
+    
+}
+.topbar p {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.body p{
+    font-size: 20px;
+    margin: 20px;
+    line-height: 30px;
+}

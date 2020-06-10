@@ -1,0 +1,30 @@
+.topbar {
+    height: 50px;
+    background-color: cyan;
+    margin-top: -20px;
+    
+}
+.topbar p {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.body {
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+button {
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #006666;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+    color: mintcream;
+}

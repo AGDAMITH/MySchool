@@ -1,0 +1,40 @@
+.top {
+    text-align: center;
+}
+
+.top p{
+    font-size: 45px;
+    font-variant: small-caps;
+}
+.bottom {
+    float: left;
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 49%;
+    background-color: cadetblue;
+    height: 400px;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.right {
+    float: left;
+    background-color: cadetblue;
+    height: 400px;
+    text-align: center;
+    width: 49%;
+    margin-left: 1%;
+}
+
+.left a, .right a{
+    position: relative;
+    top: 50%;
+    font-size: 40px;
+    background-color: blue;
+    padding: 20px;
+    color: burlywood;
+    border-radius: 15px;
+    text-decoration: none;
+}
