@@ -8,6 +8,11 @@ import { AddStComponent } from './screens/students/add-st/add-st.component';
 import { RemoveStComponent } from './screens/students/remove-st/remove-st.component';
 import { SearchStComponent } from './screens/students/search-st/search-st.component';
 import { StDetailsComponent } from './screens/students/st-details/st-details.component';
+import { AddTeachComponent } from './screens/teachers/add-teach/add-teach.component';
+import { RemoveTeachComponent } from './screens/teachers/remove-teach/remove-teach.component';
+import { SearchTeachComponent } from './screens/teachers/search-teach/search-teach.component';
+import { TeachDetailsComponent } from './screens/teachers/teach-details/teach-details.component';
+
 
 const routes: Routes = [
   { path: 'sthome', component: StHomeComponent },
@@ -18,6 +23,10 @@ const routes: Routes = [
   { path: 'removest', component: RemoveStComponent },
   { path: 'searchst', component: SearchStComponent },
   { path: 'stdetails', component: StDetailsComponent },
+  { path: 'addteach', component: AddTeachComponent },
+  { path: 'removeteach', component: RemoveTeachComponent },
+  { path: 'searchteach', component: SearchTeachComponent },
+  { path: 'teachdetails', component: TeachDetailsComponent },
   { path: '', component: HomeComponent },
 
 ];

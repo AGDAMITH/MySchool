@@ -1,0 +1,36 @@
+.topbar {
+    height: 50px;
+    background-color: cyan;
+    margin-top: -20px;
+    
+}
+.topbar p {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.body {
+    line-height: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+    left: 30%;
+    position: relative;
+}
+.body input{
+    
+    padding-top: 20px;
+    font-size: 16px;
+    left: 20%;
+    position: absolute;
+}
+button {
+    margin-top: 20px;
+    height: 45px;
+    background-color: rebeccapurple;
+    width: 200px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
