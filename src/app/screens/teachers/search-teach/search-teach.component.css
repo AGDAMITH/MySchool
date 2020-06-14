@@ -29,3 +29,16 @@ button {
     border-radius: 10px;
     background-color: salmon;
 }
+.detail {
+    width: 1000px;
+    text-align: center;
+}
+.datasec {
+    width: 40% ;
+    float: left;
+    text-align: center;
+    background-color: grey;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    padding-left: 5%;
+}

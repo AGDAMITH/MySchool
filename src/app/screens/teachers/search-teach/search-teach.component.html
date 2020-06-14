@@ -1,14 +1,23 @@
 <div class="content">
     <div class="topbar">
-        <p>Search a Teacher</p>
+        <p>View Teacher</p>
     </div>
 
     <div class="body">
-        <form action="">
-            <label>Teacher ID</label><br> 
-            <input type="text" id="teachId" required><br><br>
-
-            <button type="submit">Search</button>
-        </form>
+        <table>
+            
+            <div *ngFor="let item of desc" class="detail">
+                <div class="datasec">
+                <td>
+                    <tr>ID :{{item._id}}</tr>
+                    <tr>Name : {{item.tname}}</tr>
+                    <tr>BirthDay : {{item.tbday}}</tr>
+                    <tr>Subject : {{item.subject}}</tr>
+                    <tr>Address : {{item.address}}</tr><br><br>
+                </td>
+             </div>
+     
+            </div>
+         </table>
     </div>
 </div>

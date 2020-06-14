@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-remove-st',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RemoveStComponent implements OnInit {
 
-  constructor() { }
+  formData = {
+    id: '',
+  }
+
+  constructor(private mService: CommonService) { }
 
   ngOnInit(): void {
+  }
+
+  deletest() {
+    this.mService.deleteStudent(this.formData.id).subscribe(val=>{
+      console.log(val);
+      alert('deleted');
+    });
   }
 
 }

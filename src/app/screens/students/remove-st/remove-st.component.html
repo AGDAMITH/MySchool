@@ -4,10 +4,11 @@
     </div>
 
     <div class="body">
-        <form action="">
+        <form>
             <label>Student ID</label><br>
-            <input type="text" id="stId" required><br><br>
-            <button type="submit">Remove</button>
+            <input  type="text" [(ngModel)]="formData.id" name="stId" id="stId" required><br><br>
         </form>
+        
+        <button type="button" (click)="deletest()">Remove</button>
     </div>
 </div>

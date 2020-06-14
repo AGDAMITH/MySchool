@@ -4,13 +4,15 @@
     </div>
         
     <div class="body">
-        <form action="">
-            <label>Full Name</label><input type="text" id="tname" required><br>
-            <label>Birthday</label><input type="date" id="tbday" required><br>
-            <label>Subject</label><input type="textr" id="grade" required><br>
-            <label>Address</label><input type="text" id="address" required><br>
-            <button type="submit">Submit</button>
+        <form>
+            <label>Full Name</label><input type="text" [(ngModel)]="formData.tname" name="tname" id="tname" required><br>
+            <label>Birthday</label><input type="date" [(ngModel)]="formData.tbday" name="tbday" id="tbday" required><br>
+            <label>Subject</label><input type="textr" [(ngModel)]="formData.subject" name="subject" id="subject" required><br>
+            <label>Address</label><input type="text" [(ngModel)]="formData.address" name="address" id="address" required><br>
+            
         </form>
+
+        <button type="button" (click)="submit()">Submit</button>
        
     </div>
 </div>

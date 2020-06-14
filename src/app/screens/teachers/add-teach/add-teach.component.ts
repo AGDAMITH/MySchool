@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-add-teach',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTeachComponent implements OnInit {
 
-  constructor() { }
+  formData = {
+    tname: '',
+    tbday: '',
+    subject:'',
+    address: ''
+  }
+
+  constructor(private mService: CommonService) { }
 
   ngOnInit(): void {
+  }
+
+  submit() {
+    this.mService.SaveTeacher(this.formData).subscribe(val=>{
+      console.log(val);
+      alert('saved');
+    });
   }
 
 }
